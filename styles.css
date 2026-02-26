@@ -179,9 +179,9 @@ h1 {
     margin-left: 10px;
 }
 
-@media (max-width: 600px) { 
+@media (max-width: 600px) {
     body {
-        padding: 30px 15px;
+        padding: 20px 10px; 
     }
     
     .saludo {
@@ -189,41 +189,56 @@ h1 {
         text-align: center;
     }
 
-    #formulario {
-        border-radius: 25px;
-        padding: 15px;
-        flex-direction: column; 
-        align-items: stretch; 
+    #formulario, #cajaComentario p {
+        width: 100%;
+        border-radius: 20px;
     }
 
-    
+    #formulario {
+        padding: 15px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px; 
+    }
+
+    #iComentario {
+        width: 100%;
+        min-height: 60px; 
+    }
+
     #btnSubirComentario, #btnCancelar {
         width: 100%;
         margin-left: 0;
+        margin-top: 5px;
     }
 
-    
     #cajaComentario p {
-        flex-direction: column; 
-        align-items: flex-start; 
-        gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
     }
 
-    
     .fecha {
         margin-left: 0;
-        margin-bottom: 10px;
         color: var(--text-main);
-        opacity: 0.6; 
+        opacity: 0.6;
     }
 
-    
-    #cajaComentario p .btn-editar, 
-    #cajaComentario p .btn-eliminar {
+    #cajaComentario p .btn-editar, #cajaComentario p .btn-eliminar {
         width: 100%;
         margin-left: 0;
-        margin-top: 5px;
-        padding: 12px;
         text-align: center;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    #cajaComentario p .btn-editar {
+        background-color: #4285f4; 
+        color: white;
+    }
+    
+    #cajaComentario p .btn-eliminar {
+        background-color: #ff4757; 
+        color: white;
     }
 }
