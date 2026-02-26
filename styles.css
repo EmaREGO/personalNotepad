@@ -178,3 +178,52 @@ h1 {
     font-weight: bold;
     margin-left: 10px;
 }
+
+@media (max-width: 600px) { 
+    body {
+        padding: 30px 15px;
+    }
+    
+    .saludo {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #formulario {
+        border-radius: 25px;
+        padding: 15px;
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+
+    
+    #btnSubirComentario, #btnCancelar {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    
+    #cajaComentario p {
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 10px;
+    }
+
+    
+    .fecha {
+        margin-left: 0;
+        margin-bottom: 10px;
+        color: var(--text-main);
+        opacity: 0.6; 
+    }
+
+    
+    #cajaComentario p .btn-editar, 
+    #cajaComentario p .btn-eliminar {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 5px;
+        padding: 12px;
+        text-align: center;
+    }
+}
